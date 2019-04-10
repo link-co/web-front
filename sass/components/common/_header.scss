@@ -1,0 +1,65 @@
+.header {
+    width: 100%;
+    height: 6.4rem;
+    background-color: $color-white;
+    //make it fixed on the top of the page
+    position: sticky; top: 0; left: 0;
+    z-index: 999;
+    
+    &__inner {
+        width: $width-max-pc;
+        //make itself displayed center
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        //mkae inner contents displayed center
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include mq-sp() {
+            width: 100%;
+            padding: 0 $padding-global;
+        }
+    }
+    
+    &__left {
+        width: 30%;
+        
+        @include mq-sp() {
+            display: none;
+        }
+        
+        &--anonymous {
+            width: auto;
+            @include mq-sp() {
+                display: block;
+            }
+        }
+    }
+    
+    &__logo {
+        width: 100%;
+        height: 3.6rem;
+    }
+    
+    &__right {
+        width: 70%;
+        
+        @include mq-sp() {
+            width: 100%;
+        }
+        
+        &--anonymous {
+            width: auto;
+            display: flex; justify-content: flex-end; align-items: center;
+        }
+    }
+    
+    &__icon {
+        width: 3.6rem; heigt: 3.6rem;
+        border-radius: 50%;
+        background-color: $color-temporary;
+    }
+}

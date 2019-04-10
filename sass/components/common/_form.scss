@@ -1,0 +1,114 @@
+.form {
+    width: 100%;
+    
+    &__group {
+        display: flex;
+        align-items: center;
+        border-radius: $radius-small;
+        padding: $padding-global;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__label {
+        display: inline-block;
+        font-size: $font-medium;
+        width: 100%;
+        margin-bottom: $space-unit/4;
+    }
+    
+    &__input {
+        padding-left: $padding-global;
+        display: inline-block;
+        width: 100%;
+        //height: 2.4rem;
+        border: none;
+        border-radius: $radius-small;
+        font-size: $font-input;
+        background-color: inherit;
+        &:focus {
+            border: none; outline: none;
+        }
+    }
+    
+    &__textarea {
+        font-family: $font-JP, sans-serif;
+        width: 100%; height: 12rem;
+        font-size: $font-input;
+        background-color: inherit;
+        border: none;
+        border-radius: $radius-small;
+        &:focus {
+            border: none; outline: none;
+        }
+    }
+    
+    &__button {
+        //reset default styles
+        border: none;
+        cursor: pointer;
+        outline: none;
+        //other styles are to be written in "_buttons.scss" file
+    }
+    
+    &__invisible {
+        display: none;
+    }
+    
+    &__radio {
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        background: transparent;
+        appearance: none;
+        -webkit-appearance: none;
+        display: flex;
+        justify-content: center; align-items: center;
+        //width, height, and border should be styled in each file for blocks
+        width: 2.8rem; height: 2.8rem;
+        //border: 3px solid $link-primary;
+        
+        &:checked::before {
+            content: '';
+            border-radius: 50%;
+            // width, height, and border should be styled in each file for blocks
+            width: 1.2rem; height: 1.2rem;
+        }
+        
+        &--red {
+            border: 3px solid $color-red;
+            &:checked::before {
+                background-color: $color-red;
+            }
+        }
+        
+        &--pink {
+            border: 3px solid $color-pink;
+            &:checked::before {
+                background-color: $color-pink;
+            }
+        }
+        
+        &--blue {
+            border: 3px solid $color-blue;
+            &:checked::before {
+                background-color: $color-blue;
+            }
+        }
+        
+        &--green {
+            border: 3px solid $color-green;
+            &:checked::before {
+                background-color: $color-green;
+            }
+        }
+        
+        &--yellow {
+            border: 3px solid $color-yellow;
+            &:checked::before {
+                background-color: $color-yellow;
+            }
+        }
+    }
+}

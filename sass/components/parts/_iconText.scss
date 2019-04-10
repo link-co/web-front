@@ -1,0 +1,20 @@
+.iconText {
+    width: 100%;
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        &--center {
+            justify-content: center;
+        }
+    }
+    
+    &__icon {
+        width: 1.6rem; height: 1.6rem;
+        margin-right: .6rem;
+    }
+    
+    &__text {
+        font-size: $font-medium;
+    }
+}

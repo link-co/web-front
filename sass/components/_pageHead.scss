@@ -1,0 +1,45 @@
+.pageHead {
+    position: relative;
+    
+    @include mq-sp() {
+        width: 100%;
+        padding: $space-unit $padding-global;
+    }
+    
+    &__flexBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__logo {
+        height: 6.4rem;
+        margin-bottom: $space-unit*2;
+        display: flex; justify-content: center;
+    }
+    
+    &__title {
+        font-size: $font-large;
+        font-weight: $font-regular;
+    }
+    
+    &__body {
+        font-size: $font-medium;
+    }
+    
+    &__note {
+        display: inline-block;
+        font-size: $font-small;
+        margin-bottom: $space-unit/4;
+    }
+    
+    &__profile {
+        width: 3.6rem; height: 3.6rem;
+        border-radius: 50%;
+        background-color: $color-temporary;
+        & a {
+            display: block;
+            width: 3.6rem; height: 3.6rem;
+        }
+    }
+}

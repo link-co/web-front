@@ -1,0 +1,22 @@
+.rowContainer {
+    width: $width-column-pc;
+    margin: 0 auto;
+    padding: $space-unit 0 0;
+    
+    @include mq-sp() {
+        width: 100%;
+        padding: 0 0 $space-unit;
+    }
+    
+    &__list {
+        padding: $space-unit/2 $padding-global;
+        margin-bottom: $space-unit/2;
+        border-radius: $radius-small;
+    }
+    
+    &__label {
+        display: inline-block;
+        padding: $space-unit $padding-global;
+        font-size: $font-medium;
+    }
+}

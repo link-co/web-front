@@ -1,0 +1,23 @@
+.profilePanel {
+    width: 64rem;
+    margin: 0 auto;
+    padding: $space-unit 0;
+    @include mq-sp() {
+        width: 100%;
+        padding: $padding-global;
+    }
+    
+    &__thumb {
+        width: 9.6rem; height: 9.6rem;
+        border-radius: 50%;
+        margin: 0 auto $space-unit/4;
+        display: block;
+    }
+    
+    &__name {
+        display: block;
+        margin: 0 auto $space-unit/4;
+        text-align: center;
+        font-size: $font-medium;
+    }
+}

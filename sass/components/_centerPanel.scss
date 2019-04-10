@@ -1,0 +1,9 @@
+.centerPanel {
+    width: 96rem;
+    min-height: 36rem;
+    background-color: $color-background;
+    border-radius: $radius-large;
+    padding: $space-unit*2 $padding-global;
+    display: flex; justify-content: center; align-items: center;
+    
+}

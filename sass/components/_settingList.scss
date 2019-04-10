@@ -1,0 +1,52 @@
+.settingList {
+    width: 100%;
+    height: 4.2rem;
+    padding-left: $padding-global;
+    display: inline-block;
+    
+    &__label {
+        width: 50%;
+        line-height: 4rem;
+        font-size: $font-medium;
+    }
+    
+    &__content {
+        width: 50%; 
+        height: 100%; line-height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #FDFDFD;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    &__state {
+        font-size: $font-medium;
+    }
+    
+    &__icon {
+        width: 1.2rem; height: 1.2rem;
+        margin-right: $padding-global;
+    }
+    
+    &__form {
+        width: 100%; height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: $padding-global;
+    }
+    
+    &__radio {
+        width: 2.4rem; height: 2.4rem;
+        border: 3px solid $color-primary;
+        
+        &:checked::before {
+            content: '';
+            width: 1.2rem; height: 1.2rem;
+            background-color: $color-primary;
+        }
+    }
+}

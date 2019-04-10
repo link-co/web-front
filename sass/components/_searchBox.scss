@@ -1,0 +1,9 @@
+.searchBox {
+    padding: $space-unit 0;
+    width: 72rem;
+    margin: 0 auto;
+    @include mq-sp() {
+        width: 100%;
+        padding: $space-unit $padding-global;
+    }
+}

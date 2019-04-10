@@ -1,0 +1,40 @@
+.extraMenu {
+    width: 100%; height: 100vh;
+    background-color: rgba(#000, .4);
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex; justify-content: center; align-items: center;
+    z-index: 20;
+    
+    &__inner {
+        width: 60rem;
+        background-color: $color-white;
+        border-radius: $radius-small;
+        position: relative;
+        padding: $space-unit $space-unit*2;
+        
+        @include mq-sp() {
+            display: block;
+            position: absolute;
+            left: 0; bottom: 0;
+            width: 100%;
+            padding: $padding-global $space-unit;
+            border-radius: 0;
+        }
+    }
+    
+    &__item {
+        position: relative;
+        height: 6rem;
+        border-bottom: .5px solid $color-text-tertiary;
+        display: flex; align-items: center;
+        
+        @include mq-sp() {
+            height: 4.8rem;
+        }
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

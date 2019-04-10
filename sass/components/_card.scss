@@ -1,0 +1,20 @@
+.card {
+    width: 36rem;
+    padding: $space-unit/2 $space-unit/2;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+        
+    }
+    
+    @include mq-sp() {
+        width: 100%;
+    }
+    
+    &__item {
+        margin-bottom: $space-unit/2;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

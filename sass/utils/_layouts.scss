@@ -1,0 +1,55 @@
+.l-dispRight {
+    display: flex; justify-content: flex-end; align-items: center;
+}
+
+.l-flex {
+    display: flex;
+    align-items: center;
+}
+
+.l-flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-flexSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-flexChild {
+    flex: 1 1 0;
+}
+
+.l-fullWindow {
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+}
+
+.l-dispCenter {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    
+    &--apparent {
+        top: 45%;
+    }
+}
+
+.l-container--sp {
+    width: 100%;
+    padding: $padding-global;
+}
+
+.l-halfCircle {
+    width: 100%;
+    padding: $space-unit 0;
+    background-color: $color-blue;
+    @include mq-sp() {
+        padding: 0;
+    }
+}

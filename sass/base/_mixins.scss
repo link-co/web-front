@@ -1,0 +1,14 @@
+//==============================
+//Media Queries
+//==============================
+@mixin mq-sp($max: $sp-max-window) {
+    @media only screen and (max-width: #{$max}) {
+        @content;
+    }
+}
+
+@mixin mq-pc($min: $pc-min-window) {
+    @media only screen and (min-width: #{$min}) {
+        @content;
+    }
+}

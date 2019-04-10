@@ -1,0 +1,39 @@
+.postContents {
+    
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__sub {
+        width: 50%;
+    }
+    
+    &__thumb {
+        width: 100%; height: 80px;
+        background-color: $color-temporary;
+    }
+    
+    &__main {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: $space-unit/2;
+    }
+    
+    &__title {
+        font-size: $font-medium;
+    }
+    
+    &__foot {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__note {
+        display: inline-block;
+        font-size: $font-extraSmall;
+    }
+}

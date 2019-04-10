@@ -1,0 +1,70 @@
+.messageBlock {
+    display: flex;
+    margin-bottom: $space-unit/2;
+    
+    &__container {
+        width: $width-column-pc;
+        margin: $padding-global auto;
+        position: relative;
+        @include mq-sp() {
+            width: 100%;
+            padding: 0 $padding-global;
+        }
+    }
+    
+    &__title {
+        padding: $padding-global;
+        text-align: center;
+        font-size: $font-medium; font-weight: $font-regular;
+        @include mq-pc() {
+            background-color: $color-primary;
+            margin-bottom: $space-unit;
+        }
+    }
+    
+    &--reverse {
+        margin-right: 0;
+        flex-direction: row-reverse;
+    }
+    
+    &__profile {
+        min-width: 4.8rem; min-height: 4.8rem;
+        max-width: 4.8rem; max-height: 4.8rem;
+        border-radius: 50%;
+        background-color: $color-temporary;
+        margin-right: .8rem;
+        
+        &--reverse {
+            margin-right: 0;
+            margin-left: .8rem;
+        }
+    }
+    
+    &__contents {
+        position: relative;
+    }
+    
+    &__text {
+        max-width: 42rem;
+        padding: .6rem;
+        border-radius: $radius-mediuem;
+        background-color: $color-text-tertiary;
+        font-size: $font-medium;
+        @include mq-sp() {
+            max-width: 28rem;
+        }
+        
+        &--reverse {
+            background-color: $color-yellow;
+        }
+    }
+    
+    &__date {
+        display: inline-block;
+        font-size: $font-small;
+        
+        &--reverse {
+            margin-right: 0;
+        }
+    }
+}

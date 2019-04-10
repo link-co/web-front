@@ -1,0 +1,17 @@
+html {
+    font-size: 62.5%; //define 1rem as 10px
+}
+
+body {
+    font-family: $font-JP, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $color-text-primary;
+}
+
+a {
+    &:link,
+    &:visited {
+        color: inherit;
+    }
+}
