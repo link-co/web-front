@@ -5,14 +5,13 @@
     //make it fixed on the top of the page
     position: sticky; top: 0; left: 0;
     z-index: 999;
+    //maek inner contents displayed center
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     &__inner {
         width: $width-max-pc;
-        //make itself displayed center
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        -webkit-transform: translateY(-50%) translateX(-50%);
         //mkae inner contents displayed center
         display: flex;
         justify-content: space-between;

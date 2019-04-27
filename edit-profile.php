@@ -11,47 +11,49 @@ require 'head.php';
     //require 'header-anonymous.php';
 ?>
 
+<div class="l-halfCircle u-myColored">
 <div class="profilePanel">
     <div class="u-flexCenter u-mbM">
         <img src="./images/" class="profilePanel__thumb">
-        <span class="profilePanel__name">プロフィール写真を更新</span>
+        <span class="profilePanel__name"><a href="#">プロフィール写真を更新</a></span>
     </div>
-    <form class="form">
+    <form id="editProfileForm" class="form">
         <div class="u-mbM">
             <label class="form__label">名前</label>
-            <input class="form__input u-pdG u-bgcGrey" placeholder="Ayumu Kobayashi">
+            <input class="form__input u-pdG u-bgcWhite" placeholder="Ayumu Kobayashi">
         </div>
         <div class="u-mbM">
             <label class="form__label">ユーザーID</label>
-            <input class="form__input u-pdG u-bgcGrey" placeholder="@aymkbyshi">
+            <input class="form__input u-pdG u-bgcWhite" placeholder="@aymkbyshi">
         </div>
         <div class="u-mbM">
             <label class="form__label">リンク</label>
-            <input class="form__input u-pdG u-bgcGrey" placeholder="linktr.ee/aymkbyshi">
+            <input class="form__input u-pdG u-bgcWhite" placeholder="linktr.ee/aymkbyshi">
         </div>
         <div class="u-mbM">
             <label class="form__label">自己紹介</label>
-            <textarea class="form__textarea u-pdG u-bgcGrey"></textarea>
+            <textarea class="form__textarea u-pdG u-bgcWhite"></textarea>
         </div>
         <div class="u-mbM">
             <span class="form__label">マイカラー</span>
-            <div class="l-flexSide">
-            <input type="radio" name="color" class="form__radio form__radio--red">
+            <div class="l-flexSide l-flexSide--space u-bgcWhite u-pdG u-brS">
+            <input type="radio" name="myColor" value="linkRed" class="form__radio form__radio--red">
                 <label class="form__invisible">赤</label>
-            <input type="radio" name="color" class="form__radio form__radio--pink">
+            <input type="radio" name="myColor" value="linkPink" class="form__radio form__radio--pink">
                 <label class="form__invisible">ピンク</label>
-            <input type="radio" name="color" class="form__radio form__radio--blue">
+            <input type="radio" name="myColor" value="linkBlue" class="form__radio form__radio--blue">
                 <label class="form__invisible">青</label>
-            <input type="radio" name="color" class="form__radio form__radio--green">
+            <input type="radio" name="myColor" value="linkGreen" class="form__radio form__radio--green">
                 <label class="form__invisible">緑</label>
-            <input type="radio" name="color" class="form__radio form__radio--yellow">
+            <input type="radio" name="myColor" value="linkYellow" class="form__radio form__radio--yellow">
                 <label class="form__invisible">黄色</label>
             </div>
         </div>
         <div class="l-flexCenter">
-            <button class="form__button floatingButton">変更を保存</button>
+            <button class="form__button containedButton" name="save">変更を保存</button>
         </div>
     </form>
+</div>
 </div>
 
 

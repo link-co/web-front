@@ -27,7 +27,7 @@ require 'head.php';
                     </a></div>
                 </li>
                 <li class="">
-                    <div class="settingList">
+                    <div class="settingList"><a href="change-email.php">
                         <div class="l-flexSide">
                             <span class="settingList__label">メールアドレス</span>
                             <div class="settingList__content">
@@ -35,10 +35,10 @@ require 'head.php';
                                 <img src="images/icons/angel-right.png" class="settingList__icon">
                             </div>
                         </div>
-                    </div>
+                    </a></div>
                 </li>
                 <li class="">
-                    <div class="settingList">
+                    <div class="settingList"><a href="change-password.php">
                         <div class="l-flexSide">
                             <span class="settingList__label">パスワード</span>
                             <div class="settingList__content">
@@ -46,7 +46,7 @@ require 'head.php';
                                 <img src="images/icons/angel-right.png" class="settingList__icon">
                             </div>
                         </div>
-                    </div>
+                    </a></div>
                 </li>
                 <li class="">
                     <div class="settingList"><a href="./accounts-blocked.php">
@@ -60,7 +60,7 @@ require 'head.php';
                     </a></div>
                 </li>
                 <li class="">
-                    <div class="settingList"><a href="./accounts-muted">
+                    <div class="settingList"><a href="accounts-muted.php">
                         <div class="l-flexSide">
                             <span class="settingList__label">ミュートしたアカウント</span>
                             <div class="settingList__content">
@@ -71,7 +71,7 @@ require 'head.php';
                     </a></div>
                 </li>
                 <li class="">
-                    <div class="settingList">
+                    <div class="settingList"><a href="#">
                         <div class="l-flexSide">
                             <span class="settingList__label">自分のURLを発行</span>
                             <div class="settingList__content">
@@ -79,7 +79,18 @@ require 'head.php';
                                 <img src="images/icons/angel-right.png" class="settingList__icon">
                             </div>
                         </div>
-                    </div>
+                    </a></div>
+                </li>
+                <li class="">
+                    <div class="settingList"><a href="#">
+                        <div class="l-flexSide">
+                            <span class="settingList__label">ログアウト</span>
+                            <div class="settingList__content">
+                                <span class="settingList__state"></span>
+                                <img src="images/icons/angel-right.png" class="settingList__icon">
+                            </div>
+                        </div>
+                    </a></div>
                 </li>
             </ul>
         </li>

@@ -16,9 +16,9 @@
         padding: $padding-global;
         text-align: center;
         font-size: $font-medium; font-weight: $font-regular;
+        border-radius: $radius-small;
         @include mq-pc() {
             background-color: $color-primary;
-            margin-bottom: $space-unit;
         }
     }
     
@@ -34,6 +34,11 @@
         background-color: $color-temporary;
         margin-right: .8rem;
         
+        @include mq-sp() {
+            min-width: 3.6rem; min-height: 3.6rem;
+            max-width: 3.6rem; max-height: 3.6rem;
+        }
+        
         &--reverse {
             margin-right: 0;
             margin-left: .8rem;
@@ -47,7 +52,7 @@
     &__text {
         max-width: 42rem;
         padding: .6rem;
-        border-radius: $radius-mediuem;
+        border-radius: $radius-medium;
         background-color: $color-text-tertiary;
         font-size: $font-medium;
         @include mq-sp() {
@@ -55,7 +60,7 @@
         }
         
         &--reverse {
-            background-color: $color-yellow;
+            background-color: $color-primary;
         }
     }
     

@@ -19,8 +19,8 @@ require 'head.php';
         <span>さあ、はじめよう</span>
     </div>
     <div class="u-flexCenter">
-        <a href="#" class=""></a>
-        <a href="#" class=""></a>
+        <a href="#" class="roundButton">新規登録</a>
+        <a href="#" class="roundButton">ログイン</a>
     </div>
 </div>
 

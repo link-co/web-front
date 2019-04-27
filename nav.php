@@ -33,11 +33,11 @@
             </a>
         </li>
         <li class="globalNav__list">
-            <a href="settings.php" class="globalNav__inner">
+            <a href="my-profile.php" class="globalNav__inner">
                 <div class="globalNav__icon">
-                    <img src="images/icons/gear.png" class="iconM">
+                    <img src="images/icons/user.png" class="iconM">
                 </div>
-                <span class="globalNav__text">設定</span>
+                <span class="globalNav__text">ユーザー</span>
             </a>
         </li>
         <li class="globalNav__list u-dispNone--sp">

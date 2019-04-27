@@ -1,10 +1,11 @@
 .profilePanel {
-    width: 64rem;
+    width: 48rem;
     margin: 0 auto;
     padding: $space-unit 0;
     @include mq-sp() {
         width: 100%;
         padding: $padding-global;
+        padding-bottom: 2rem;
     }
     
     &__thumb {

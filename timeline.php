@@ -7,8 +7,8 @@ require 'head.php';
 <body>
 
 <?php
-    //require 'header.php';
-    require 'header-anonymous.php';
+    require 'header.php';
+    //require 'header-anonymous.php';
 ?>
 
 <div class="pageHead u-dispNone--pc">
@@ -28,6 +28,9 @@ require 'head.php';
 <div class="cardsContainer cardsContainer--pageTop">
     <ul class="cardsContainer__inner">
         <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
             <div class="card">
                 <div class="card__item">
                     <div class="l-flexSide">
@@ -37,7 +40,7 @@ require 'head.php';
                             </div>
                             <div class="profileLabel__texts">
                                 <ul class="">
-                                    <li class=""><a href="#">ユーザーネーム</a></li>
+                                    <li class=""><a href="others-profile.php">ユーザーネーム</a></li>
                                     <li class="profileLabel__note"><a href="#">@userID</a></li>
                                 </ul>
                             </div>
@@ -75,7 +78,7 @@ require 'head.php';
                             <div class="iconText">
                                 <a href="#" class="iconText__inner">
                                     <img src="images/icons/link.png" class="iconText__icon">
-                                    <span class="iconText__text">URLをシェア</span>
+                                    <span class="iconText__text u-fs08rem--sp">このURLをシェアする</span>
                                 </a>
                             </div>
                         </li>
@@ -83,7 +86,7 @@ require 'head.php';
                             <div class="iconText">
                                 <a href="#" class="iconText__inner">
                                     <img src="images/icons/mail.png" class="iconText__icon">
-                                    <span class="iconText__text">メッセージ</span>
+                                    <span class="iconText__text  u-fs08rem--sp">メッセージを送る</span>
                                 </a>
                             </div>
                         </li>
@@ -91,21 +94,42 @@ require 'head.php';
                 </div>
             </div>
         </li>
-        
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
+        <li class="cardsContainer__list">
+            <?php require 'post-card.php'; ?>
+        </li>
     </ul>
 </div>
 
 <div id="newPost" class="floatingActionButton">+</div>
 
-<!--
-
-<div class="extraMenu">
+<div id="extraMenu" class="extraMenu">
     <ul class="extraMenu__inner">
         <li class="extraMenu__item">
             <div class="iconText">
                 <a href="#" class="iconText__inner">
                     <img src="images/icons/sound-off.png" class="iconText__icon">
-                    <div class="iconText__text">このユーザーの投稿を非表示</div>
+                    <div class="iconText__text">このユーザーをミュートする</div>
                 </a>
             </div>
         </li>
@@ -121,11 +145,19 @@ require 'head.php';
             <div class="iconText">
                 <a href="#" class="iconText__inner">
                     <img src="images/icons/flag.png" class="iconText__icon">
-                    <div class="iconText__text">このリンクを報告する</div>
+                    <div class="iconText__text">このユーザーを報告する</div>
                 </a>
             </div>
         </li>
         <li class="extraMenu__item">
+            <div class="iconText">
+                <a href="#" class="iconText__inner">
+                    <img src="images/icons/flag.png" class="iconText__icon">
+                    <div class="iconText__text">このリンクを報告する</div>
+                </a>
+            </div>
+        </li>
+        <li id="closeExtraMenu" class="extraMenu__item extraMenu__item--colored">
             <div class="iconText">
                 <a href="#" class="iconText__inner">
                     <div class="iconText__text l-dispCenter">キャンセル</div>
@@ -142,19 +174,19 @@ require 'head.php';
         </div>
         <div class="modal__body">
             <form class="form">
-                <div class="form__group u-bgcGrey">
+                <div class="form__group u-bgcGrey u-mbS">
                     <img src="images/icons/link.png" class="iconM u-mrIconNText">
                     <input class="form__input" placeholder="URLを貼り付け">
                 </div>
-                <button class="form__button floatingButton u-dispCenter">投稿する</button>
+                <div class="l-flexCenter">
+                    <button class="form__button containedButton u-mAuto">投稿する</button>
+                </div>
             </form>
         </div>
-        <div id="closeButton" class="modal__close">
+        <div id="closePostModal" class="modal__close">
             <img src="images/icons/times-white.png" class="u-fullImage">
         </div>
     </div>
 </div>
-
--->
 
 </body>

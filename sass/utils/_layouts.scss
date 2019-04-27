@@ -17,6 +17,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &--space {
+        justify-content: space-around;
+    }
+}
+
+.l-flexRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.l-flexVertical {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .l-flexChild {
@@ -48,8 +63,11 @@
 .l-halfCircle {
     width: 100%;
     padding: $space-unit 0;
-    background-color: $color-blue;
+    border-bottom-left-radius: 50% 60px;
+    border-bottom-right-radius: 50% 60px;
     @include mq-sp() {
         padding: 0;
+        border-bottom-left-radius: 50% 30px;
+        border-bottom-right-radius: 50% 30px;
     }
 }

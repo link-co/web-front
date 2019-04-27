@@ -1,0 +1,41 @@
+.othersTab {
+    margin: 0 auto;
+    width: 64rem;
+    height: 3.6rem; line-height: 3.6rem;
+    font-size: $font-medium;
+    display: flex; justify-content: center; align-items: center;
+    
+    @include mq-sp() {
+        width: 100%;
+        padding: 0 $padding-global;
+    }
+    
+    &__left {
+        flex: 2 0 0;
+        margin-right: $space-unit/4;
+    }
+    
+    &__right {
+        flex: 1 0 0;
+    }
+    
+    &__item {
+        width: 100%;
+        text-align: center;
+        border: solid .05rem $color-text-secondary;
+        
+        &--left {
+            border-top-left-radius: $radius-large;
+            border-bottom-left-radius: $radius-large;
+        }
+        
+        &--right {
+            border-top-right-radius: $radius-large;
+            border-bottom-right-radius: $radius-large;
+        }
+        
+        &.current {
+            background-color: $color-yellow;
+        }
+    }
+}

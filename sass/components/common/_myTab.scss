@@ -1,0 +1,45 @@
+.myTab {
+    margin: 0 auto;
+    width: 64rem;
+    height: 3.6rem; line-height: 3.6rem;
+    font-size: $font-medium;
+    
+    @include mq-sp() {
+        width: 100%;
+        height: 2.8rem; line-height: 2.8rem;
+    }
+    
+    &__inner {
+        display: flex;
+        justify-content: center; align-items: center;
+        
+        @include mq-sp() {
+            padding: 0 $padding-global;
+        }
+    }
+    
+    &__item {
+        flex: 1 0 0;
+        text-align: center;
+        border: solid .05rem $color-text-secondary;
+        
+        & a {
+            display: inline-block;
+            width: 100%; height: 100%;
+        }
+        
+        &.current {
+            background-color: $color-yellow;
+        }
+        
+        &--left {
+            border-top-left-radius: $radius-large;
+            border-bottom-left-radius: $radius-large;
+        }
+        
+        &--right {
+            border-top-right-radius: $radius-large;
+            border-bottom-right-radius: $radius-large;
+        }
+    }
+}

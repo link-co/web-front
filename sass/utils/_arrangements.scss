@@ -1,28 +1,20 @@
-.u-fullImage {
-    //width: 100%; 
-    height: 100%;
-}
-
-.u-dispNone {
-    display: none;
-    &--pc {
-        @include mq-pc() {
-            display: none;
-        }
+//color
+.u-myColored {
+    &.linkRed {
+        background-color: $color-red;
     }
-    &--sp {
-        @include mq-sp() {
-            display: none;
-        }
+    &.linkPink {
+        background-color: $color-pink;
     }
-}
-
-.u-mrIconNText {
-    margin-right: .8rem;
-}
-
-.u-taCenter {
-    text-align: center;
+    &.linkBlue {
+        background-color: $color-blue;
+    }
+    &.linkGreen {
+        background-color: $color-green;
+    }
+    &.linkYellow {
+        background-color: $color-yellow;
+    }
 }
 
 .u-bgcLink {
@@ -37,17 +29,57 @@
     background-color: $color-text-tertiary;
 }
 
-//margin
+//images
+.u-fullImage {
+    //width: 100%; 
+    height: 100%;
+}
+
+//display & text-align
+.u-dispNone {
+    display: none;
+    &--pc {
+        @include mq-pc() {
+            display: none;
+        }
+    }
+    &--sp {
+        @include mq-sp() {
+            display: none;
+        }
+    }
+}
+
+.u-taCenter {
+    text-align: center;
+}
+
+.u-mAuto {
+    margin: 0 auto;
+}
+
+//margin & padding
+//margin-bottom
 .u-mbS {
     margin-bottom: $space-unit/2;
 }
 
 .u-mbM {
     margin-bottom: $space-unit;
+    &--pc {
+        @include mq-pc() {
+            margin-bottom: $space-unit;
+        }
+    }
 }
 
 .u-mbL {
     margin-bottom: $space-unit*2;
+}
+
+//marign-right
+.u-mrIconNText {
+    margin-right: .8rem;
 }
 
 .u-mrS {
@@ -58,6 +90,27 @@
     margin-right: $space-unit;
 }
 
+//padding
 .u-pdG {
     padding: $padding-global;
+}
+
+//border-radius
+.u-brS {
+    border-radius: $radius-small;
+}
+
+//font-sizes
+.u-fsInput {
+    font-size: $font-input;
+}
+.u-fwBold {
+    font-weight: $font-bold;
+}
+
+//temporary
+.u-fs08rem--sp {
+    @include mq-sp() {
+        font-size: .8rem;
+    }
 }

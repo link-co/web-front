@@ -1,7 +1,7 @@
 .rowContainer {
     width: $width-column-pc;
     margin: 0 auto;
-    padding: $space-unit 0 0;
+    padding: $space-unit 0 $space-unit;
     
     @include mq-sp() {
         width: 100%;
@@ -10,13 +10,13 @@
     
     &__list {
         padding: $space-unit/2 $padding-global;
-        margin-bottom: $space-unit/2;
-        border-radius: $radius-small;
+        //margin-bottom: $space-unit/2;
+        border-bottom: solid .05rem $color-text-tertiary;
     }
     
     &__label {
         display: inline-block;
         padding: $space-unit $padding-global;
-        font-size: $font-medium;
+        font-size: $font-large;
     }
 }

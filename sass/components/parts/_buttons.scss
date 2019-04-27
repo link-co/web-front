@@ -54,3 +54,14 @@
     z-index: 10;
     cursor: pointer;
 }
+
+.longRoundButton {
+    display: flex; justify-content: center; align-items: center;
+    padding: $space-unit/4 $space-unit*2;
+    border: solid .05rem $color-text-secondary;
+    border-radius: $radius-large;
+    
+    &.active {
+        
+    }
+}
